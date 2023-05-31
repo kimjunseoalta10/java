@@ -1,39 +1,27 @@
 
 public class Student {
-//	String name;
-//	int grade;
-//	static int count = 0;
-//	public Student() {
-//		count++;
-//	}
-	
-//	String name ;
-//	int grade ;
-//	static int count = 0;
-//	public Student() {
-//		count++;
-//	}
-//	public static int getCount() {
-//		return count;
-//	}
-	
-	private String name ;
-	private int grade ;
-	public String getName() {
-		return name;
+	String name;
+	String hakbun;
+	String phone;
+	String juso;
+	String major;
+	public Student() {}
+	public Student(String name, String hakbun)
+	{
+		this.name=name;
+		this.hakbun=hakbun;
 	}
-	public void setName(String n) {
-		name = n;
+	public void study() {
+		System.out.println("공부하다.");
 	}
-	public int getGrade() {
-		return grade;
+	public void eat() {
+		System.out.println("식사하다.");
 	}
-	public void setGrade(int g) {
-		grade = g;
+	public void test() {
+		System.out.println("시험하다.");
 	}
-	
-	public void print() {
-		System.out.println("학생의 이름은 "+name+"이고"+grade+"학년입니다.");
+	public void sextra_act() {
+		System.out.println("동아리 활동하다.");
 	}
 	
 
