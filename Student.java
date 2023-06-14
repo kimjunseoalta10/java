@@ -1,28 +1,12 @@
 
-public class Student {
-	String name;
-	String hakbun;
-	String phone;
-	String juso;
-	String major;
-	public Student() {}
-	public Student(String name, String hakbun)
-	{
-		this.name=name;
-		this.hakbun=hakbun;
+public class Student extends Person{
+	boolean online;
+	public void printInfo() {
+		super.printInfo();
+		if(online==true)
+			System.out.println(name+"은 학생이며 현재 온라인 수업 중입니다.");
+		else
+			System.out.println(name+"은 학생이며 현재 등교 수업 중입니다.");
 	}
-	public void study() {
-		System.out.println("공부하다.");
-	}
-	public void eat() {
-		System.out.println("식사하다.");
-	}
-	public void test() {
-		System.out.println("시험하다.");
-	}
-	public void sextra_act() {
-		System.out.println("동아리 활동하다.");
-	}
-	
 
 }
